@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Rezervime Restoranti</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <h2>Autentikimi</h2>
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Fjalëkalimi">
+  <button id="signup">Regjistrohu</button>
+  <button id="login">Hyr</button>
+  <button id="logout" style="display:none;">Dil</button>
+
+  <hr>
+
+  <div id="rezervime-section" style="display:none;">
+    <h2>Bëj një rezervim</h2>
+    <input type="date" id="data">
+    <input type="time" id="ora">
+    <input type="number" id="personat" placeholder="Numri i personave">
+    <button id="rezervo">Rezervo</button>
+
+    <h3>Rezervimet e tua</h3>
+    <ul id="lista-rezervimeve"></ul>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
